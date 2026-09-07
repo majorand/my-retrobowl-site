@@ -1,90 +1,73 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blazer</title>
-    <link rel="stylesheet" href="/main.css">
-    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.2.0/css/all.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="refresh" content="0; url=games/retro-bowl/">
+  <title>Retro Bowl</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      background: #080b10;
+      color: #f4f7fb;
+    }
+
+    main {
+      width: min(92vw, 520px);
+      text-align: center;
+    }
+
+    h1 {
+      margin: 0 0 14px;
+      font-size: clamp(2rem, 8vw, 4.5rem);
+      line-height: 1;
+      letter-spacing: 0;
+    }
+
+    p {
+      margin: 0 0 28px;
+      color: #cbd5e1;
+      font-size: 1rem;
+      line-height: 1.5;
+    }
+
+    a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 48px;
+      padding: 0 22px;
+      border: 2px solid #facc15;
+      border-radius: 8px;
+      background: #facc15;
+      color: #111827;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    a:focus-visible {
+      outline: 3px solid #38bdf8;
+      outline-offset: 4px;
+    }
+  </style>
 </head>
 <body>
-    <nav>
-        <img src="images/logo.png" alt="logo">
-        <h1>BLAZER</h1>
-    </nav>
+  <main>
+    <h1>Retro Bowl</h1>
+    <p>Opening the game now. If it does not start automatically, use the button below.</p>
+    <a href="games/retro-bowl/">Open Retro Bowl</a>
+  </main>
 
-    <div class="featured">
-        <h1>Popular:</h1>
-        <div class="column">
-          <a href="games/bob-the-robber-2/">
-            <img src="images/bob-the-robber-2.png">
-            <div class="play-button">
-                <i class="fa-solid fa-play"></i>
-            </div>
-          </a>
-          <a href="games/vex7/">
-            <img src="images/vex7.jpeg">
-            <div class="play-button">
-                <i class="fa-solid fa-play"></i>
-            </div>
-          </a>
-        </div>
-        <div class="row">
-          <a href="games/vex6">
-            <img src="images/vex6.jpeg">
-            <div class="play-button">
-                <i class="fa-solid fa-play"></i>
-            </div>
-          </a>
-        </div>
-        <div class="row">
-          <a href="games/drive-mad/">
-            <img src="images/drive-mad.jpg">
-            <div class="play-button">
-                <i class="fa-solid fa-play"></i>
-            </div>
-            </a>
-        </div>
-        <div class="column">
-          <a href="games/moto-x3m/">
-            <img src="images/moto-x3m.jpg">
-            <div class="play-button">
-                <i class="fa-solid fa-play"></i>
-            </div>
-          </a>
-          <a href="games/retro-bowl/">
-            <img src="images/retro-bowl.jpg">
-            <div class="play-button">
-                <i class="fa-solid fa-play"></i>
-            </div>
-          </a>
-        </div>
-        </div>
-    </div>
-
-    <div class="content">
-
-    <hr>
-
-    <div class="search">
-        <input type="text" placeholder="Search..." oninput="">
-        <button><i class="fas fa-search"></i></button>
-    </div>
-
-    <div id="games">
-        <a href="games/bob-the-robber-2/"><img src="images/bob-the-robber-2.png" alt="bob the robber 2"></a>
-        <a href="games/vex7/"><img src="images/vex7.jpeg" alt="vex 7"></a>
-        <a href="games/vex6/"><img src="images/vex6.jpeg" alt="vex 6"></a>
-        <a href="games/"><img src="images/mc.png" alt="minecraft"></a>
-        <a href="games/moto-x3m/"><img src="images/moto-x3m.jpg" alt="moto x3m"></a>
-        <a href="games/retro-bowl/"><img src="images/retro-bowl.jpg" alt="retrobowl"></a>
-        <a href="games/drive-mad/"><img src="images/drive-mad.jpg" alt="drive mad"></a>
-        <a href="games/slope/"><img src="images/slope.jpg" alt="slope"></a>
-        <a href="games/motox3m2/"><img src="images/motox3m2.jpg" alt="moto x3m2"></a>
-    </div>
-    </div>
+  <script>
+    window.location.replace("games/retro-bowl/");
+  </script>
 </body>
 </html>
-
-<script src="script.js"></script>
